@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'SF-Pro';
+    src: url('fonts/SF-Pro-Rounded-Medium.otf') format('truetype');
+  }
+*{
+    font-family: SF-Pro;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar{
+    width: 0px;
+}
+
+#instagram{
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header-instagram{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    min-height: 44px;
+    padding-right: 16px;
+    padding-left: 16px;
+    padding-top: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.header-instagram a{
+    font-size: 16px;
+}
+
+#add{
+    margin-bottom: 4px;
+    margin-right: 5px;
+}
+
+#instagram footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 44px;
+    min-height: 44px;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#instagram footer a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+}
+
+#instagram footer img{
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#instagram main{
+    flex: 1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    background: white;
+    padding: 45px 0;
+}
+
+.post-perfil{
+    display: flex;
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 100%;
+    height: 69px;
+}
+
+.perfil-img{
+    float: left;
+    width: 35px;
+    height: 35px;
+}
+
+.post-img img{
+    width: 33px;
+    height: 33px;
+    border-radius: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.perfil-nome{
+    float: right;
+    margin-top: 7px;
+    margin-left: 10px;
+    color: black;
+    text-decoration:none;
+    height: 14px;
+    width: auto;
+}
+
+.post{
+    display: flex;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.post-media{
+    width: 100%;
+}
+
+.more{
+    float: right;
+    margin-top: 20px;
+    margin-right: 12px;
+}
+
+.manutencao{
+    display: none;
+}
+.menor{
+    display: none;
+}
+@media screen and (max-width: 359px) {
+    .menor{
+        display: inline;
+    }
+    #instagram{
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .manutencao{
+        display: table-cell;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: #223265;
+    }
+    .manutencao img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+    }
+    
+    #instagram{
+        display: none;
+    }
+}
+
+.reacts{
+    margin-left: 13px;
+    display: flex;
+    width: 100px;
+    height: 54px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.save{
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 54px;
+    width: 40px;
+}
+.likes{
+    margin-left: 13px;
+    margin-top: 55px;
+    display: flex;
+    height: 25px;
+    width: 40px;
+}
+
+.description-box{
+    width: 90%;
+    margin-left: 13px;
+}
+
+.description{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.show-comments{
+    margin-left: 6px;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.comments{
+    margin-left: 13px;
+    margin-bottom: 15px;;
+}
+.profile-img{
+    position: absolute;
+}
+
+.profile-img img{
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 40px;
+    width: 77px;
+    height: 77px;
+}
+
+.profile-name{
+    margin-top: 6px;
+    margin-left: 120px;
+}
+
+.profile-name a{
+    font-size: 28px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+}
+
+.edit-profile{
+    border-radius: 6px;
+    padding-top: 3px;
+    text-align: center;
+    margin-left: 120px;
+    border: thin solid rgba(0, 0, 0, 0.2);
+    width: 55%;
+    height: 30px;
+}
+
+.nome{
+    float: left;
+    margin-top: 40px;
+    margin-left: 15px;
+    color: black;
+    text-decoration:none;
+    height: 14px;
+    width: 97%;
+}
+
+.profile-description{
+    margin-left: 15px;
+}
+
+.profile-description a{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+}
+
+.profile-info-1{
+    margin-left: 13px;
+    display: flex;
+    width: 90%;
+    height: 54px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.info{
+    text-align: center;
+}
+
+.profile-info-2{
+    margin-left: 13px;
+    margin-top: 13px;
+    display: flex;
+    width: 90%;
+    height: 54px;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.table-info{
+    margin-top: 5px;
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: center;
+
+}
+
+.table-info td {
+    min-width: 100px;
+    height: 1px;
+  }
+
+.table1-div{
+    margin-top: 20px;
+    border: thin solid rgba(0, 0, 0, 0.2);
+    height: 50px;
+}
+
+.table1-tr td{
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+}
+
+.profile-options{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    justify-content: space-between;
+    position: static;
+}
+
+.container-galeria{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: 70%;
+    grid-gap: 2px;
+}
+
+.item-galeria{
+    position: relative;
+}
+
+.item-galeria .img-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
